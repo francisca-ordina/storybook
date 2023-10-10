@@ -1,7 +1,7 @@
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
 import { ButtonModule } from './button.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 const meta: Meta<ButtonComponent> = {
@@ -10,7 +10,7 @@ const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
   decorators: [
     moduleMetadata({
-      imports: [ButtonModule, FontAwesomeModule]
+      imports: [ButtonModule]
     })
   ],
   argTypes: {
