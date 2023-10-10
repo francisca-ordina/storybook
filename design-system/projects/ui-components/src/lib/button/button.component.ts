@@ -7,7 +7,7 @@ import { ButtonSize, ButtonType } from './button.types'
   template: `
     <button
     type="button"
-    
+  
     (click)="onClick.emit($event)"
     [ngClass]="classes"
   >  

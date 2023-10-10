@@ -35,7 +35,7 @@ export default meta;
 type Story = StoryObj<ButtonComponent>;
 
 
-export const Buttons: Story = {
+export const Button: Story = {
   args: {
     size: "md",
     label: 'Button',
