@@ -1,0 +1,73 @@
+@import "../../styles.scss";
+
+$ypenburg-button-size-normal: 20 !default;
+$ypenburg-button-font-size: 1rem !default;
+$ypenburg-button-line-height: 1.5rem !default;
+$ypenburg-button-font-size-rem: rem($ypenburg-button-font-size) !default;
+$ypenburg-button-icon-margin: 8 !default;
+$ypenburg-button-color: $white !default;
+$ypenburg-button-color-hover: $ypenburg-grey--25;
+$ypenburg-button-color-disabled: $ypenburg-grey--25;
+$ypenburg-button-color-primary: $ypenburg-grey--25;
+$ypenburg-button-background: $ypenburg-blue;
+$ypenburg-button-background-hover: $ypenburg-blue--130 !default;
+$ypenburg-button-background-focus: $black;
+$ypenburg-button-padding: 20 px;
+
+.ypenburg-button {
+  &.is-active,
+  &:active,
+  &:hover,
+  &:visited {
+    color: $ypenburg-button-color-hover;
+    stroke: $ypenburg-button-color-hover;
+    fill: $ypenburg-button-color-hover;
+  }
+  &:hover,
+  &:active {
+    background-color: $ypenburg-button-background-hover;
+  }
+  &:active {
+    outline: 2px dashed $ypenburg-button-background-hover;
+    outline-offset: 2px;
+  }
+  &:focus {
+    outline: 2px dashed $ypenburg-button-background;
+    outline-offset: 2px;
+  }
+  & {
+    padding: 9px 16px;
+    border-radius: 0;
+    border: 1px solid $ypenburg-button-background;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: $ypenburg-button-padding;
+    font-family: inherit;
+    font-size: $ypenburg-button-font-size;
+    font-weight: 400;
+    line-height: $ypenburg-button-line-height;
+    text-align: center;
+    text-decoration: none;
+  }
+  &--primary {
+    color: $ypenburg-button-color;
+    background-color: $ypenburg-button-background;
+  }
+  &--secondary {
+    color: $ypenburg-blue;
+    background-color: $white;
+    border: 1px solid $ypenburg-blue;
+  }
+  &--sm {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  &--md {
+    padding: 9px 16px;
+  }
+  &--lg {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+}

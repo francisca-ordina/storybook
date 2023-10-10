@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "ROsans";
+  src: url("../../assets/fonts/ROsanswebtextregular.woff") format("woff"),
+    url("./../../assets/fonts/ROsanswebtextregular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$ypenburg-font-default: #{"ROsans", Verdana, sans-serif};

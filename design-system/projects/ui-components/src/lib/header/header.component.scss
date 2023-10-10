@@ -1,0 +1,17 @@
+@import "../../styles.scss";
+
+$ypenburg-header-background: $white;
+$ypenburg-header-color: $ypenburg-blue !default;
+
+.ypenburg-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $ypenburg-header-background;
+  color: $ypenburg-header-color;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}

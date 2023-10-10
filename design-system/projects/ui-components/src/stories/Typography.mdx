@@ -1,0 +1,78 @@
+import { Meta, Typeset } from "@storybook/blocks";
+
+<Meta title="Typography" />
+
+export const typography = {
+  type: {
+    primary: '"ROsans"',
+  },
+  weight: {
+    regular: "400",
+    bold: "700",
+    extrabold: "800",
+    black: "900",
+  },
+  lineheight: {
+    fw20: 20,
+    fw21: 21,
+    fw23: 23,
+    fw25: 25,
+    fw30: 30,
+    fw40: 40,
+  },
+  size: {
+    s1: 16,
+    m1: 18,
+    h4: 18,
+    h3: 21,
+    h2: 27,
+    h1: 36,
+  },
+};
+
+export const SampleText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+# Typography
+
+**Font:** ROsans Rijksoverheid Sans Web
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(
+      typography.size.h1,
+      typography.weight.bold,
+      typography.lineheight.fw40
+    ),
+    Number(
+      typography.size.h2,
+      typography.weight.bold,
+      typography.lineheight.fw30
+    ),
+    Number(
+      typography.size.h3,
+      typography.weight.bold,
+      typography.lineheight.fw23
+    ),
+    Number(
+      typography.size.h4,
+      typography.weight.bold,
+      typography.lineheight.fw23
+    ),
+    Number(
+      typography.size.m1,
+      typography.weight.regular,
+      typography.lineheight.fw25
+    ),
+     Number(
+      typography.size.s1,
+      typography.weight.regular,
+      typography.lineheight.fw22
+    ),
+  ]}
+
+sampleText={SampleText}
+fontFamily={typography.type.primary}
+/>
