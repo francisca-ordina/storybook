@@ -53,6 +53,7 @@ $ypenburg-button-padding: 20 px;
   &--primary {
     color: $ypenburg-button-color;
     background-color: $ypenburg-button-background;
+    border: 1px solid $ypenburg-blue;
   }
   &--secondary {
     color: $ypenburg-blue;

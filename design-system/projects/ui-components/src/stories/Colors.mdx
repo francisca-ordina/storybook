@@ -1,67 +1,98 @@
-import { Meta, ColorPalette, ColorItem, Colors } from "@storybook/blocks";
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
 
-<Meta title="Colors" />
+    <Meta title="Colors" />
 
-<ColorPalette>
+    <ColorPalette>
 
-<ColorItem
-  title="Primaire kleuren Ypenburg"
-  subtitle="Primaire kleurpalet"
-  colors={{
-    "$ypenburg-purple": "#42145f",
-    Blauw: "#007bc7",
-    Zwart: "#000000",
-    Wit: "#ffffff",
-  }}
-/>
-<ColorItem
-  title="Secundaire kleuren"
-  subtitle="Secundair kleurpalet"
-  colors={{
-    Robijnrood: "#ca005d",
-    Groen: "#39870c",
-    Donkergeel: "#ffb612",
-    Mintgroen: "#76d2b6",
-  }}
-/>
-<ColorItem
-  title="Tinten"
-  subtitle="Lichte achtergrondtinten"
-  colors={{
-    Paars30: "#c6b9cf",
-    Paars15: "#e3dce7",
-    Blauw130: "#004c7a",
-    Blauw30: "#b2d7ee",
-    Blauw15: "#d9ebf7",
-  }}
-/>
+          <ColorItem
+              title="Primaire kleuren"
+              subtitle="Primaire kleurpalet"
+              colors={{
+                "$ypenburg-purple": "#42145f",
+                "$ypenburg-blue": "#007bc7",
+                "$black": "#000000",
+                "$white": "#ffffff",
+              }}
+            />
+      <ColorItem
+              title="Secundaire kleuren"
+              subtitle="De secundaire kleuren worden vooral gebruikt voor illustraties en grafieken."
+              colors={{
+                "$ypenburg-rubyred": "#ca005d",
+                "$ypenburg-green": "#39870c",
+                "$ypenburg-darkyellow": "#ffb612",
+                "$ypenburg-mintgreen": "#76d2b6",
+              }}
+            />
+      <ColorItem
+              title="Tinten"
+              subtitle="Lichtere tinten kunnen worden gebruikt als achtergronden. De donkere tinten worden gebruikt voor het weergeven van states bij interactieve elementen."
+              colors={{
+                "$ypenburg-purple--30": "#c6b9cf",
+                "$ypenburg-purple--15": "#e3dce7",
+                "$ypenburg-blue--130": "#004c7a",
+                "$ypenburg-blue--30": "#b2d7ee",
+                "$ypenburg-blue--15": "#d9ebf7",
+              }}
+            />
 
-<ColorItem
-  title="Grijstinten"
-  subtitle="Grijstinten"
-  colors={{
-    Grijs100: "#535353",
-    Grijs85: "#696969;",
-    Grijs70: "#999999",
-    Grijs40: "#cccccc",
-    Grijs25: "#E6E6E6",
-    Grijs10: "#f3f3f3",
-  }}
-/>
+      <ColorItem
+              title="Grijstinten"
+              subtitle="Grijstinten"
+              colors={{
+                "$ypenburg-grey--100": "#535353",
+                "$ypenburg-grey--85": "#696969;",
+                "$ypenburg-grey--70": "#999999",
+                "$ypenburg-grey--40": "#cccccc",
+                "$ypenburg-grey--25": "#E6E6E6",
+                "$ypenburg-grey--10": "#f3f3f3",
+              }}
+            />
 
-<ColorItem
-  title="Alerts"
-  subtitle="Kleurpalet alerts"
-  colors={{
-    Succes: "#39870c",
-    SuccesTint: "#e1eddb",
-    Waarschuwing: "#ffb612",
-    WaarschuwingTint: "#fff4dc",
-    Alert: "#d52b1e",
-    AlertTint: "#f9dfdd",
-    Info: "#007bc7",
-    InfoTint: "#d9ebf7",
-  }}
-/>
 
-</ColorPalette>
+                <ColorItem
+                        title="Grijstinten"
+                        subtitle="Grijstinten"
+                        colors={{
+                          "$ypenburg-grey--100": "#535353",
+                          "$ypenburg-grey--85": "#696969;",
+                          "$ypenburg-grey--70": "#999999",
+                          "$ypenburg-grey--40": "#cccccc",
+                          "$ypenburg-grey--25": "#E6E6E6",
+                          "$ypenburg-grey--10": "#f3f3f3",
+                        }}
+                      />
+   <ColorItem
+           title="Succes"
+           subtitle="Kleurpalet alerts"
+           colors={{
+             "$ypenburg-green": "#39870c",
+             "$ypenburg-succes-shade": "#e1eddb",
+           }}
+         />
+      <ColorItem
+              title="Alerts"
+              subtitle="Kleurpalet alerts"
+              colors={{
+                "$ypenburg-red": "#d52b1e",
+                "$ypenburg-danger-shade": "#f9dfdd",
+
+              }}
+            />
+                  <ColorItem
+                          title="Warning"
+                          subtitle="Kleurpalet alerts"
+                          colors={{
+                            "$ypenburg-darkyellow": "#ffb612",
+                            "$ypenburg-warning-shade": "#fff4dc",
+                          }}
+                        />
+            <ColorItem
+                    title="Info"
+                    subtitle="Kleurpalet alerts"
+                    colors={{
+                      "$ypenburg-blue": "#007bc7",
+                      "$ypenburg-info-shade": "#d9ebf7",
+                    }}
+                  />
+          </ColorPalette>

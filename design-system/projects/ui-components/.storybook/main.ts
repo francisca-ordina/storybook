@@ -11,7 +11,6 @@ const config: StorybookConfig = {
     "@storybook/addon-styling",
     "@storybook/blocks",
     "@storybook/preset-scss",
-    "install"
   ],
 
   framework: {

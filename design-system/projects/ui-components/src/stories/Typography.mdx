@@ -1,6 +1,6 @@
 import { Meta, Typeset } from "@storybook/blocks";
 
-<Meta title="Typography" />
+    <Meta title="Typography" />
 
 export const typography = {
   type: {
@@ -13,16 +13,20 @@ export const typography = {
     black: "900",
   },
   lineheight: {
+    fw20: 12,
     fw20: 20,
     fw21: 21,
+    fw22: 22,
     fw23: 23,
     fw25: 25,
     fw30: 30,
     fw40: 40,
   },
   size: {
-    s1: 16,
-    m1: 18,
+    xs1: 10,
+    s1: 14,
+    m1: 16,
+    h5: 16,
     h4: 18,
     h3: 21,
     h2: 27,
@@ -31,7 +35,7 @@ export const typography = {
 };
 
 export const SampleText =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  "Rijksoverheid Sans";
 
 # Typography
 
@@ -39,40 +43,50 @@ export const SampleText =
 
 **Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
 
-<Typeset
-  fontSizes={[
-    Number(
-      typography.size.h1,
-      typography.weight.bold,
-      typography.lineheight.fw40
-    ),
-    Number(
-      typography.size.h2,
-      typography.weight.bold,
-      typography.lineheight.fw30
-    ),
-    Number(
-      typography.size.h3,
-      typography.weight.bold,
-      typography.lineheight.fw23
-    ),
-    Number(
-      typography.size.h4,
-      typography.weight.bold,
-      typography.lineheight.fw23
-    ),
-    Number(
-      typography.size.m1,
-      typography.weight.regular,
-      typography.lineheight.fw25
-    ),
-     Number(
-      typography.size.s1,
-      typography.weight.regular,
-      typography.lineheight.fw22
-    ),
-  ]}
+    <Typeset
+          fontSizes={[
+            Number(
+              typography.size.h1,
+              typography.weight.bold,
+              typography.lineheight.fw40
+            ),
+            Number(
+              typography.size.h2,
+              typography.weight.bold,
+              typography.lineheight.fw30
+            ),
+            Number(
+              typography.size.h3,
+              typography.weight.bold,
+              typography.lineheight.fw23
+            ),
+            Number(
+              typography.size.h4,
+              typography.weight.bold,
+              typography.lineheight.fw22
+            ),
+            Number(
+              typography.size.h5,
+              typography.weight.bold,
+              typography.lineheight.fw23
+            ),
+            Number(
+              typography.size.m1,
+              typography.weight.regular,
+              typography.lineheight.fw22
+            ),
+            Number(
+              typography.size.s1,
+              typography.weight.regular,
+              typography.lineheight.fw20
+            ),
+            Number(
+              typography.size.xs1,
+              typography.weight.regular,
+              typography.lineheight.fw12
+            ),
+          ]}
 
-sampleText={SampleText}
-fontFamily={typography.type.primary}
-/>
+          sampleText={SampleText}
+          fontFamily={typography.type.primary}
+        />
