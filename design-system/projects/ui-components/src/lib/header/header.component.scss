@@ -9,9 +9,10 @@ $ypenburg-header-color: $ypenburg-blue !default;
   align-items: center;
   background-color: $ypenburg-header-background;
   color: $ypenburg-header-color;
+  &__logo {
+    width: 150px;
+    transform: translateX(-75px);
+    margin: 0 auto;
+  }
 }
 
-.img {
-  max-width: 100%;
-  height: auto;
-}

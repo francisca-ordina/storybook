@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
       [ngClass]="classes"
     >
     {{ heading }}
-    <img src="/assets/logo/logo_online.svg" />
+    <img class="ypenburg-header__logo" src="images/logo_online.svg" />
   </header>`,
   styleUrls: ['./header.component.scss'],
 })
