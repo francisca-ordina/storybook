@@ -2,7 +2,6 @@ import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 
 import { HeaderComponent } from './header.component';
 
-
 const meta: Meta<typeof HeaderComponent> = {
     title: 'Components/Header',
     tags: ['autodocs'],

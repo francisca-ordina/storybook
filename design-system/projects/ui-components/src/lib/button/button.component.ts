@@ -6,15 +6,13 @@ import { ButtonSize, ButtonType } from './button.types'
   selector: 'ypenburg-button',
   template: `
     <button
-    type="button"
-  
-    (click)="onClick.emit($event)"
-    [ngClass]="classes"
-  >  
+      type="button"
+      (click)="onClick.emit($event)"
+      [ngClass]="classes"
+    >  
     {{ label }}
   </button>`,
   styleUrls: ['./button.component.scss'],
-
 })
 
 export class ButtonComponent {
