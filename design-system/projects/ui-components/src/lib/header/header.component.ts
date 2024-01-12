@@ -6,8 +6,10 @@ import { Component, Input } from '@angular/core';
     <header 
       [ngClass]="classes"
     >
-    {{ heading }}
-    <img class="ypenburg-header__logo" src="images/logo_online.svg" />
+    <!-- {{ heading }} -->
+    <a class="ypenburg-header__link" href="/">
+      <img class="ypenburg-header__logo" src="images/logo_online.svg" />
+    </a>
   </header>`,
   styleUrls: ['./header.component.scss'],
 })

@@ -5,14 +5,15 @@ $ypenburg-header-color: $ypenburg-blue !default;
 
 .ypenburg-header {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
   background-color: $ypenburg-header-background;
-  color: $ypenburg-header-color;
-  &__logo {
-    width: 150px;
-    transform: translateX(-75px);
+  &__link {
     margin: 0 auto;
+    width: 314px;
+    transform: translateX(132px);
+  }
+  &__logo {
+
   }
 }
 
